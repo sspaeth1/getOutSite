@@ -1,0 +1,14 @@
+<%- include('partials/header')%>
+<h1>Create a new campground</h1>
+
+<form class='' action="/campgrounds" method='POST'>
+    <input type="text" name='name' value='' placeholder='Add name'>
+    <input type='text' name='image' placeholder="Add image">
+    <button type="post" name="button" onclick="function clicked(){console.log('button clicked')}">Add new campground</button> 
+
+    <!-- <input type="button" name="" value="" placeholder="add campground" onclick="function clicked(){console.log('buttton clicked')}"> -->
+
+</form>
+
+
+<%- include('partials/footer');%>
