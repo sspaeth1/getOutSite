@@ -1,14 +1,18 @@
 <%- include('partials/header')%>
-<h1>Create a new campground</h1>
 
-<form class='' action="/campgrounds" method='POST'>
-    <input type="text" name='name' value='' placeholder='Add name'>
-    <input type='text' name='image' placeholder="Add image">
-    <button type="post" name="button" onclick="function clicked(){console.log('button clicked')}">Add new campground</button> 
+<div class="container">
 
-    <!-- <input type="button" name="" value="" placeholder="add campground" onclick="function clicked(){console.log('buttton clicked')}"> -->
+    <h1 class="d-flex justify-content-center mt-5">Create a new campground</h1>
+      <div class="d-flex justify-content-center">
+      <form class='' action="/campgrounds" method='POST'>
+        <input class="form-control m-3" type="text" name='name' value='' placeholder='Camp name'>
+        <input  class="form-control m-3" type='text' name='image' placeholder="Image URL">
+        <button class='btn btn-primary lg btn-block m-3' type="post" name="button" onclick="function clicked(){console.log('button clicked')}">Add new campground</button>
 
-</form>
-
+        <!-- <input type="button" name="" value="" placeholder="add campground" onclick="function clicked(){console.log('buttton clicked')}"> -->
+    </form>
+  </div>
+      <a href="/campgrounds" class="d-flex justify-content-center">Go Back</a>
+</div>
 
 <%- include('partials/footer');%>
